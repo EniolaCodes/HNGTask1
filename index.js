@@ -2,11 +2,19 @@ const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
+const hero = document.querySelector("#hero");
 const day = document.getElementById("day");
 const utcTime = document.getElementById("time");
 
-
-
+// show sidebar
+navBtn.addEventListener("click", () => {
+	sidebar.classList.add("show-sidebar");
+	hero.classList.add("hidden");
+});
+closeBtn.addEventListener("click", () => {
+	sidebar.classList.remove("show-sidebar");
+	hero.classList.remove("hidden");
+});
 
 // get day of the week
 const newDate = new Date();

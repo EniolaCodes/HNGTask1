@@ -20,9 +20,9 @@
 	</head>
 	<body>
 		<nav class="nav" id="nav">
-			<div class="nav-center section-center">
+			<div class="nav-center">
 				<div class="nav-header">
-					<img src="./assets/mylogo2.png" alt="" class="nav-logo" />
+					<img src="./assets/logo.png" alt="" class="nav-logo" />
 					<button class="nav-btn" id="nav-btn">
 						<i class="fa-solid fa-bars"></i>
 					</button>
@@ -55,8 +55,40 @@
 				</ul>
 			</div>
 		</nav>
-
-		<header class="hero">
+		<aside class="sidebar" id="sidebar">
+			<div>
+				<button class="close-btn" id="close-btn">
+					<i class="fas fa-times"></i>
+				</button>
+				<ul class="sidebar-links">
+					<li>
+						<a
+							href="http://hng.tech/learn"
+							target="_blank"
+							data-testid="hngLink"
+							>HNG</a
+						>
+					</li>
+					<li>
+						<a
+							href="http://keyword.dog/"
+							target="_blank"
+							data-testid="keywordLink"
+							>Keyword</a
+						>
+					</li>
+					<li>
+						<a
+							href="http://scrapeanyweb.site/"
+							target="_blank"
+							data-testid="scrapeanywebLink"
+							>Scrapper</a
+						>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<header class="hero" id="hero">
 			<div class="section-center hero-center">
 				<article class="hero-info">
 					<p>
@@ -89,15 +121,15 @@
 					<div>
 						<h5 data-testid="slackDisplayName">Slack Name: Asunke</h5>
 						<h5 data-testid="slackEmail">
-							Slack Email : adebimpeniola@gmail.com
+							Slack Email: adebimpeniola@gmail.com
 						</h5>
-						<h5 id="day" data-testid="currentTimeUTC" class="day"></h5>
+						<h5 id="day" data-testid="currentDay" class="day"></h5>
 						<h5 id="time" data-testid="currentTimeUTC" class="time"></h5>
 					</div>
 				</article>
 				<article class="hero-img">
 					<img
-						src="./assets/IMG_7348.jpg"
+						src="./assets/profilePic.jpg"
 						class="hero-photo"
 						data-testid="slackProfilePicture"
 						alt="Fatimah Adebimpe"
