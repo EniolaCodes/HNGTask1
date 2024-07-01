@@ -19,8 +19,8 @@
 		<title>HNG Task-1</title>
 	</head>
 	<body>
-		<nav class="nav">
-			<div class="nav-center">
+		<nav class="nav" id="nav">
+			<div class="nav-center section-center">
 				<div class="nav-header">
 					<img src="./assets/mylogo2.png" alt="" class="nav-logo" />
 					<button class="nav-btn" id="nav-btn">
@@ -29,15 +29,82 @@
 				</div>
 				<ul class="nav-links">
 					<li>
-						<a href="http://hng.tech/learn">HNG</a>
+						<a
+							href="http://hng.tech/learn"
+							target="_blank"
+							data-testid="hngLink"
+							>HNG</a
+						>
 					</li>
-					<li><a href="http://keyword.dog/">Keyword</a></li>
 					<li>
-						<a href="http://scrapeanyweb.site/">Scrapper</a>
+						<a
+							href="http://keyword.dog/"
+							target="_blank"
+							data-testid="keywordLink"
+							>Keyword</a
+						>
+					</li>
+					<li>
+						<a
+							href="http://scrapeanyweb.site/"
+							target="_blank"
+							data-testid="scrapeanywebLink"
+							>Scrapper</a
+						>
 					</li>
 				</ul>
 			</div>
 		</nav>
+
+		<header class="hero">
+			<div class="section-center hero-center">
+				<article class="hero-info">
+					<p>
+						Over the next two years, I plan to build a strong foundation and
+						work towards achieving my career goals.
+					</p>
+					<p>
+						In the first year, my main goal is to master the essential trio of
+						web development: HTML, CSS (including advanced layouts and
+						preprocessors), and JavaScript. I also plan to choose a widely used
+						framework like React and gain a deep understanding of its
+						fundamental principles. Additionally, I aim to practice creating
+						responsive designs to ensure that my work looks and functions well
+						on various devices. To solidify my learning, I intend to build
+						personal projects that demonstrate my abilities.
+					</p>
+					<p>
+						During the second year, I will broaden my knowledge by exploring
+						tools such as build systems and linters to streamline my workflow. I
+						also plan to learn techniques for optimizing website performance,
+						emphasizing the importance of testing and implementing strategies to
+						maintain high code quality. Accessibility will also be a priority,
+						as I strive to create websites that are inclusive for all users.
+						Throughout this period, I will stay updated on industry trends,
+						attend relevant events, and continuously seek opportunities for
+						learning. As I progress, I will consider specializing in areas like
+						front-end architecture or mobile app development to become a
+						well-rounded front-end developer.
+					</p>
+					<div>
+						<h5 data-testid="slackDisplayName">Slack Name: Asunke</h5>
+						<h5 data-testid="slackEmail">
+							Slack Email : adebimpeniola@gmail.com
+						</h5>
+						<h5 id="day" data-testid="currentTimeUTC" class="day"></h5>
+						<h5 id="time" data-testid="currentTimeUTC" class="time"></h5>
+					</div>
+				</article>
+				<article class="hero-img">
+					<img
+						src="./assets/IMG_7348.jpg"
+						class="hero-photo"
+						data-testid="slackProfilePicture"
+						alt="Fatimah Adebimpe"
+					/>
+				</article>
+			</div>
+		</header>
 		<script src="./index.js"></script>
 	</body>
 </html>
